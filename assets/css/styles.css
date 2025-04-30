@@ -51,17 +51,67 @@ p, h1, h2, h3, a {
 
   .content-plechovka {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center; 
+    padding: 40px 0;
   }
-
+  
   .content-plechovka section {
     width: 55%;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
   }
-
+  
   .content-plechovka img {
     width: 45%;
-    border-radius: 125px;
+    max-width: 800px;
+    height: auto;
+    border-radius: 50px;
   }
+
+  @media only screen and (max-width: 600px) {
+    .content-plechovka {
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .content-plechova section, img {
+      width: 100%;
+    }
+  }
+
+  .content-vysilac {
+    margin-top: 15px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .content-vysilac section {
+    width: 33.33%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .content-vysilac {
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .content-vysilac section {
+      width: 100%;
+      padding-top: 20px;
+    }
+  }
+  
 
   .cover-img {
     display: flex;
