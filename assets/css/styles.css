@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 p, h1, h2, h3, a {
     font-family: sans-serif;
 }
@@ -40,8 +44,23 @@ p, h1, h2, h3, a {
   }
   
   .content {
+    padding-top: 2rem;
     max-width: 80%;
     margin: auto;
+  }
+
+  .content-plechovka {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-plechovka section {
+    width: 55%;
+  }
+
+  .content-plechovka img {
+    width: 45%;
+    border-radius: 125px;
   }
 
   .cover-img {
@@ -69,3 +88,4 @@ p, h1, h2, h3, a {
     position: absolute;
     top: 74vh;
   }
+
