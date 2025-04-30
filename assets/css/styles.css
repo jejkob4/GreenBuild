@@ -48,7 +48,7 @@ p, h1, h2, h3, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
   }
@@ -62,5 +62,10 @@ p, h1, h2, h3, a {
   .cover-img h1 {
     position: absolute;
     text-align: center;
+    font-size: 3rem;
   }
-  
+
+  .cover-img svg {
+    position: absolute;
+    top: 74vh;
+  }
