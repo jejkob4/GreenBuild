@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+}
 
 p, h1, h2, h3, a {
     font-family: sans-serif;
@@ -69,6 +72,10 @@ p, h1, h2, h3, a {
     .menu-toggle:checked + .menu-icon + .navbar-links {
       display: flex;
     }
+
+    .content-plechovka img {
+    display: none;
+  }
   }
   
   .content {
@@ -79,7 +86,7 @@ p, h1, h2, h3, a {
 
   .content-plechovka {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center; 
     padding: 40px 0;
   }
@@ -149,6 +156,7 @@ p, h1, h2, h3, a {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       margin-top: 20px;
+      margin-bottom: 6rem;
   }
 
   .sluzba {
@@ -227,15 +235,20 @@ p, h1, h2, h3, a {
     color: white;
   }
 
-    .contact-section {
+  hr.solid {
+    border-top: 3px solid #bbb;
+    width: 100%;
+  } 
+
+  .contact-section {
+      padding-top: 4rem;
       text-align: center;
   }
 
   .contact-form {
       max-width: 600px;
-      margin: 2rem auto 0 auto;
+      margin: 0 auto 4.5rem auto;
       text-align: left;
-      padding: 2rem;
       border-radius: 1rem;
       font-family: sans-serif;
   }
@@ -286,7 +299,7 @@ p, h1, h2, h3, a {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 2rem;
+      
   }
 
   .footer-logo h2 {
@@ -302,7 +315,7 @@ p, h1, h2, h3, a {
   .footer-nav {
       display: flex;
       flex-direction: column;
-      gap: 0.4rem;
+      gap: 0.2rem;
   }
 
   .footer-nav a {
